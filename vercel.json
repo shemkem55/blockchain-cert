@@ -17,7 +17,7 @@
     ],
     "functions": {
         "frontend v2/api/**/*.js": {
-            "runtime": "@vercel/node"
+            "maxDuration": 10
         }
     }
 }
