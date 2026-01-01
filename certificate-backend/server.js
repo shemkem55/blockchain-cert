@@ -141,9 +141,13 @@ let blockchainRetryHandle = null;
 const blockchainRetryIntervalMs = Number.parseInt(process.env.BLOCKCHAIN_RETRY_MS || "15000", 10);
 
 if (DB_TYPE === 'mariadb') {
-    console.log("🔌 Using MariaDB Database");
+    console.log("🔌 Using MariaDB/MySQL Database");
     ({ connectDB, getDB } = require("./config/db"));
     ({ User, Certificate, Feedback, ActivityLog, CertificateRequest, VerificationHistory, FraudReport } = require("./config/models"));
+} else if (DB_TYPE === 'postgres') {
+    console.log("🔌 Using PostgreSQL Database");
+    ({ connectDB, getDB } = require("./config/db-pg"));
+    ({ User, Certificate, Feedback, ActivityLog, CertificateRequest, VerificationHistory, FraudReport } = require("./config/models-pg"));
 } else {
     console.log("🔌 Using SQLite Database");
     ({ connectDB, getDB } = require("./config/db-sqlite"));
