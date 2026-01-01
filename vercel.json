@@ -4,20 +4,19 @@
     "rewrites": [
         {
             "source": "/auth/:path*",
-            "destination": "/api/auth/:path*"
+            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/auth/:path*"
         },
         {
-            "source": "/health",
-            "destination": "/api/health"
+            "source": "/certificates/:path*",
+            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/certificates/:path*"
+        },
+        {
+            "source": "/api/:path*",
+            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/:path*"
         },
         {
             "source": "/(.*)",
             "destination": "/index.html"
         }
-    ],
-    "functions": {
-        "api/**/*.js": {
-            "maxDuration": 10
-        }
-    }
+    ]
 }
