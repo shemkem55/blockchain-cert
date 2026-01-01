@@ -31,3 +31,5 @@ services:
         sync: false
       - key: BLOCKCHAIN_ADMIN_PRIVATE_KEY
         sync: false
+      - key: CORS_ORIGINS
+        value: "https://blockchain-cert-shem-kipyegons-projects.vercel.app,http://localhost:8080"
