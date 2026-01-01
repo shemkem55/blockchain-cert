@@ -7,6 +7,29 @@ function makeId(prefix = '') {
     return prefix + Date.now().toString(36) + '-' + randomBytes(4).toString('hex');
 }
 
+// Helper for query chaining (to match Mongoose-like syntax used in server.js)
+function createQueryObject(resultData) {
+    return {
+        data: resultData,
+        select: function (fields) {
+            if (fields === '-password') {
+                if (Array.isArray(this.data)) {
+                    this.data.forEach(d => delete d.password);
+                } else if (this.data) {
+                    delete this.data.password;
+                }
+            }
+            return this;
+        },
+        then: function (resolve, reject) {
+            if (typeof resolve === 'function') {
+                return Promise.resolve(resolve(this.data));
+            }
+            return Promise.resolve(this.data);
+        }
+    };
+}
+
 // ==================== USER MODEL ====================
 class User {
     constructor(data) {
@@ -16,6 +39,10 @@ class User {
         if (this.isVerified !== undefined) {
             this.isVerified = !!this.isVerified;
         }
+        if (this.isBanned !== undefined) {
+            this.isBanned = !!this.isBanned;
+        }
+        this.passwordHistory = this.passwordHistory || [];
     }
 
     async save() {
@@ -29,8 +56,8 @@ class User {
             this.isVerified = this.isVerified || false;
 
             await pool.execute(
-                `INSERT INTO users (id, email, password, role, isVerified, otp, otpExpire, createdAt) 
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+                `INSERT INTO users (id, email, password, role, isVerified, otp, otpExpire, createdAt, university, organizationName, registrationNumber) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
                 [
                     this.id,
                     this.email,
@@ -39,21 +66,34 @@ class User {
                     this.isVerified ? 1 : 0,
                     this.otp || null,
                     this.otpExpire || null,
-                    this.createdAt
+                    this.createdAt,
+                    this.university || null,
+                    this.organizationName || null,
+                    this.registrationNumber || null
                 ]
             );
         } else {
             await pool.execute(
                 `UPDATE users 
-         SET email=?, password=?, role=?, isVerified=?, otp=?, otpExpire=? 
-         WHERE id=?`,
+                 SET email=?, password=?, role=?, isVerified=?, otp=?, otpExpire=?, 
+                     university=?, organizationName=?, registrationNumber=?, 
+                     isBanned=?, riskScore=?, lastLoginAt=?, sessionId=?, refreshToken=?
+                 WHERE id=?`,
                 [
                     this.email,
                     this.password,
                     this.role,
                     this.isVerified ? 1 : 0,
                     this.otp || null,
-                    this.otpExpire ? new Date(this.otpExpire) : null,
+                    this.otpExpire || null,
+                    this.university || null,
+                    this.organizationName || null,
+                    this.registrationNumber || null,
+                    this.isBanned ? 1 : 0,
+                    this.riskScore || 0,
+                    this.lastLoginAt || null,
+                    this.sessionId || null,
+                    this.refreshToken || null,
                     this.id
                 ]
             );
@@ -71,13 +111,8 @@ class User {
         this.otpExpire = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
         return this.otp;
     }
-
-    isModified(field) {
-        return true; // Simplified - always return true
-    }
 }
 
-// Static methods for User
 User.findOne = async function (query) {
     const pool = getPool();
     const keys = Object.keys(query);
@@ -89,15 +124,12 @@ User.findOne = async function (query) {
     if (query.email) {
         clause = 'email = ?';
         params.push(query.email);
-    } else if (query._id) {
+    } else if (query.id || query._id) {
         clause = 'id = ?';
-        params.push(query._id);
-    } else if (query.id) {
-        clause = 'id = ?';
-        params.push(query.id);
+        params.push(query.id || query._id);
     } else {
         const k = keys[0];
-        clause = k === '_id' ? 'id = ?' : `\`${k}\` = ?`;
+        clause = `\`${k}\` = ?`;
         params.push(query[k]);
     }
 
@@ -106,9 +138,7 @@ User.findOne = async function (query) {
 
     const row = rows[0];
     row.isVerified = !!row.isVerified;
-    row.otpExpire = row.otpExpire ? new Date(row.otpExpire) : null;
-    row.createdAt = row.createdAt ? new Date(row.createdAt) : null;
-
+    row.isBanned = !!row.isBanned;
     return new User(row);
 };
 
@@ -119,55 +149,25 @@ User.findById = async function (id) {
     if (!rows || rows.length === 0) return null;
 
     const user = new User(rows[0]);
-    user.select = function (sel) {
-        if (sel === '-password') delete this.password;
-        return this;
-    };
-
     return createQueryObject(user);
 };
 
 User.find = async function (query = {}) {
     const pool = getPool();
     const [rows] = await pool.execute('SELECT * FROM users');
-    const users = rows.map(row => {
-        row.isVerified = !!row.isVerified;
-        return new User(row);
-    });
-    return createQueryObject(users);
-};
-
-User.findByIdAndUpdate = async function (id, update, opts) {
-    const current = await User.findById(id);
-    if (!current) return null;
-
-    const userObj = current.data || current;
-    Object.assign(userObj, update);
-    await userObj.save();
-
-    return createQueryObject(new User(userObj));
-};
-
-User.findByIdAndDelete = async function (id) {
-    const pool = getPool();
-    const current = await User.findById(id);
-    if (!current) return null;
-
-    await pool.execute('DELETE FROM users WHERE id = ?', [id]);
-    return current;
+    return rows.map(r => new User(r));
 };
 
 User.countDocuments = async function (query = {}) {
     const pool = getPool();
     const keys = Object.keys(query);
-
-    if (keys.length === 0) {
-        const [rows] = await pool.execute('SELECT COUNT(*) as c FROM users');
-        return rows[0].c;
+    let sql = 'SELECT COUNT(*) as c FROM users';
+    let params = [];
+    if (keys.length > 0) {
+        sql += ' WHERE ' + keys.map(k => `\`${k}\` = ?`).join(' AND ');
+        params = Object.values(query);
     }
-
-    const k = keys[0];
-    const [rows] = await pool.execute(`SELECT COUNT(*) as c FROM users WHERE \`${k}\` = ?`, [query[k]]);
+    const [rows] = await pool.execute(sql, params);
     return rows[0].c;
 };
 
@@ -183,9 +183,7 @@ User.collection = {
 class Certificate {
     constructor(data) {
         Object.assign(this, data);
-        if (this.revoked !== undefined) {
-            this.revoked = !!this.revoked;
-        }
+        this.revoked = !!this.revoked;
     }
 
     async save() {
@@ -195,40 +193,32 @@ class Certificate {
         if (exists.length === 0) {
             await pool.execute(
                 `INSERT INTO certificates 
-         (id, name, course, year, revoked, issuedAt, issuedBy, transactionHash, tokenId, walletAddress, studentEmail) 
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+                 (id, name, course, year, revoked, issuedAt, issuedBy, transactionHash, tokenId, walletAddress, studentEmail, grade, description, certificateType, institution, honors, registrationNumber, registrarAddress) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
                 [
-                    this.id,
-                    this.name,
-                    this.course,
-                    this.year,
-                    this.revoked ? 1 : 0,
-                    this.issuedAt,
-                    this.issuedBy,
-                    this.transactionHash || null,
-                    this.tokenId || null,
-                    this.walletAddress || null,
-                    this.studentEmail || null
+                    this.id, this.name, this.course, this.year, this.revoked ? 1 : 0,
+                    this.issuedAt, this.issuedBy, this.transactionHash || null,
+                    this.tokenId || null, this.walletAddress || null, this.studentEmail || null,
+                    this.grade || null, this.description || null, this.certificateType || null,
+                    this.institution || null, this.honors || null, this.registrationNumber || null,
+                    this.registrarAddress || null
                 ]
             );
         } else {
             await pool.execute(
                 `UPDATE certificates 
-         SET name=?, course=?, year=?, revoked=?, issuedAt=?, issuedBy=?, 
-             transactionHash=?, tokenId=?, walletAddress=?, studentEmail=? 
-         WHERE id=?`,
+                 SET name=?, course=?, year=?, revoked=?, issuedAt=?, issuedBy=?, 
+                     transactionHash=?, tokenId=?, walletAddress=?, studentEmail=?,
+                     grade=?, description=?, certificateType=?, institution=?, honors=?,
+                     registrationNumber=?, registrarAddress=?
+                 WHERE id=?`,
                 [
-                    this.name,
-                    this.course,
-                    this.year,
-                    this.revoked ? 1 : 0,
-                    this.issuedAt,
-                    this.issuedBy,
-                    this.transactionHash,
-                    this.tokenId,
-                    this.walletAddress,
-                    this.studentEmail,
-                    this.id
+                    this.name, this.course, this.year, this.revoked ? 1 : 0,
+                    this.issuedAt, this.issuedBy, this.transactionHash, this.tokenId,
+                    this.walletAddress, this.studentEmail,
+                    this.grade || null, this.description || null, this.certificateType || null,
+                    this.institution || null, this.honors || null, this.registrationNumber || null,
+                    this.registrarAddress || null, this.id
                 ]
             );
         }
@@ -238,31 +228,20 @@ class Certificate {
 
 Certificate.findOne = async function (query) {
     const pool = getPool();
-    if (!query.id) return null;
-
     const [rows] = await pool.execute('SELECT * FROM certificates WHERE id = ? LIMIT 1', [query.id]);
-    if (!rows.length) return null;
-
-    const row = rows[0];
-    row.revoked = !!row.revoked;
-    return new Certificate(row);
+    return rows.length ? new Certificate(rows[0]) : null;
 };
 
 Certificate.find = async function (query = {}) {
     const pool = getPool();
     let sql = 'SELECT * FROM certificates';
     let params = [];
-
     if (query.studentEmail) {
         sql += ' WHERE studentEmail = ?';
         params.push(query.studentEmail);
     }
-
     const [rows] = await pool.execute(sql, params);
-    return rows.map(r => {
-        r.revoked = !!r.revoked;
-        return new Certificate(r);
-    });
+    return rows.map(r => new Certificate(r));
 };
 
 // ==================== FEEDBACK MODEL ====================
@@ -274,16 +253,125 @@ class Feedback {
     async save() {
         const pool = getPool();
         this.id = makeId('f_');
-        this.createdAt = new Date();
-
         await pool.execute(
-            `INSERT INTO feedback (id, name, email, subject, feedbackType, message, createdAt) 
-       VALUES (?, ?, ?, ?, ?, ?, ?)`,
-            [this.id, this.name, this.email, this.subject, this.feedbackType, this.message, this.createdAt]
+            `INSERT INTO feedback (id, name, email, subject, feedbackType, message) VALUES (?, ?, ?, ?, ?, ?)`,
+            [this.id, this.name, this.email, this.subject, this.feedbackType, this.message]
         );
         return this;
     }
 }
+
+// ==================== ACTIVITY LOG MODEL ====================
+class ActivityLog {
+    constructor(data) {
+        Object.assign(this, data);
+    }
+
+    async save() {
+        const pool = getPool();
+        this.id = makeId('log_');
+        await pool.execute(
+            `INSERT INTO activity_logs (id, userId, email, action, details, ip, userAgent) VALUES (?, ?, ?, ?, ?, ?, ?)`,
+            [this.id, this.userId || null, this.email || null, this.action, this.details || null, this.ip || null, this.userAgent || null]
+        );
+        return this;
+    }
+}
+
+ActivityLog.find = async function (query = {}) {
+    const pool = getPool();
+    let sql = 'SELECT * FROM activity_logs';
+    let params = [];
+    if (query.email) {
+        sql += ' WHERE email = ?';
+        params.push(query.email);
+    }
+    sql += ' ORDER BY createdAt DESC LIMIT 100';
+    const [rows] = await pool.execute(sql, params);
+    return rows.map(r => new ActivityLog(r));
+};
+
+// ==================== CERTIFICATE REQUEST MODEL ====================
+class CertificateRequest {
+    constructor(data) {
+        Object.assign(this, data);
+    }
+
+    async save() {
+        const pool = getPool();
+        const isNew = !this.id;
+        const docs = typeof this.documents === 'object' ? JSON.stringify(this.documents) : this.documents;
+
+        if (isNew) {
+            this.id = makeId('req_');
+            await pool.execute(
+                `INSERT INTO certificate_requests (id, studentId, studentEmail, studentName, university, registrationNumber, course, status, rejectionReason, documents) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+                [this.id, this.studentId, this.studentEmail, this.studentName, this.university, this.registrationNumber, this.course, this.status || 'pending', this.rejectionReason || null, docs]
+            );
+        } else {
+            await pool.execute(
+                `UPDATE certificate_requests SET status=?, rejectionReason=?, updatedAt=CURRENT_TIMESTAMP WHERE id=?`,
+                [this.status, this.rejectionReason, this.id]
+            );
+        }
+        return this;
+    }
+}
+
+CertificateRequest.find = async function (query = {}) {
+    const pool = getPool();
+    let sql = 'SELECT * FROM certificate_requests';
+    let params = [];
+    const keys = Object.keys(query);
+    if (keys.length > 0) {
+        sql += ' WHERE ' + keys.map(k => `\`${k}\` = ?`).join(' AND ');
+        params = Object.values(query);
+    }
+    sql += ' ORDER BY createdAt DESC';
+    const [rows] = await pool.execute(sql, params);
+    return rows.map(r => new CertificateRequest(r));
+};
+
+CertificateRequest.findById = async function (id) {
+    const pool = getPool();
+    const [rows] = await pool.execute('SELECT * FROM certificate_requests WHERE id = ?', [id]);
+    return rows.length ? new CertificateRequest(rows[0]) : null;
+};
+
+// ==================== VERIFICATION HISTORY MODEL ====================
+class VerificationHistory {
+    constructor(data) {
+        Object.assign(this, data);
+    }
+
+    async save() {
+        const pool = getPool();
+        this.id = makeId('vh_');
+        const resJson = typeof this.result === 'object' ? JSON.stringify(this.result) : this.result;
+        const reasonsJson = typeof this.reasons === 'object' ? JSON.stringify(this.reasons) : this.reasons;
+
+        await pool.execute(
+            `INSERT INTO verification_history (id, employerId, employerEmail, certificateId, status, result, reasons) 
+             VALUES (?, ?, ?, ?, ?, ?, ?)`,
+            [this.id, this.employerId, this.employerEmail, this.certificateId, this.status, resJson, reasonsJson]
+        );
+        return this;
+    }
+}
+
+VerificationHistory.find = async function (query = {}) {
+    const pool = getPool();
+    let sql = 'SELECT * FROM verification_history';
+    let params = [];
+    if (query.employerEmail) {
+        sql += ' WHERE employerEmail = ?';
+        params.push(query.employerEmail);
+    }
+    sql += ' ORDER BY createdAt DESC';
+    const [rows] = await pool.execute(sql, params);
+    return rows.map(r => new VerificationHistory(r));
+};
 
 // ==================== FRAUD REPORT MODEL ====================
 class FraudReport {
@@ -294,69 +382,25 @@ class FraudReport {
     async save() {
         const pool = getPool();
         this.id = makeId('fraud_');
-        this.createdAt = new Date();
-
         await pool.execute(
-            `INSERT INTO fraud_reports (id, certificateId, reporterEmail, reporterName, institution, reason, details, status, createdAt) 
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-            [
-                this.id,
-                this.certificateId,
-                this.reporterEmail,
-                this.reporterName || null,
-                this.institution || null,
-                this.reason,
-                this.details || null,
-                this.status || 'pending',
-                this.createdAt
-            ]
+            `INSERT INTO fraud_reports (id, certificateId, reporterEmail, reporterName, institution, reason, details, status) 
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+            [this.id, this.certificateId, this.reporterEmail, this.reporterName || null, this.institution || null, this.reason, this.details || null, this.status || 'pending']
         );
         return this;
     }
+}
 
-    static async find(query = {}) {
-        const pool = getPool();
-        let sql = 'SELECT * FROM fraud_reports';
-        let params = [];
-        let clauses = [];
-
-        if (query.certificateId) {
-            clauses.push('certificateId = ?');
-            params.push(query.certificateId);
-        }
-        if (query.reporterEmail) {
-            clauses.push('reporterEmail = ?');
-            params.push(query.reporterEmail);
-        }
-
-        if (clauses.length > 0) {
-            sql += ' WHERE ' + clauses.join(' AND ');
-        }
-
-        sql += ' ORDER BY createdAt DESC';
-        const [rows] = await pool.execute(sql, params);
-        return rows.map(r => new FraudReport(r));
+FraudReport.find = async function (query = {}) {
+    const pool = getPool();
+    let sql = 'SELECT * FROM fraud_reports';
+    let params = [];
+    if (query.certificateId) {
+        sql += ' WHERE certificateId = ?';
+        params.push(query.certificateId);
     }
-}
+    const [rows] = await pool.execute(sql, params);
+    return rows.map(r => new FraudReport(r));
+};
 
-// Helper for query chaining
-function createQueryObject(resultData) {
-    return {
-        data: resultData,
-        select: function (fields) {
-            if (fields === '-password') {
-                if (Array.isArray(this.data)) {
-                    this.data.forEach(d => delete d.password);
-                } else if (this.data) {
-                    delete this.data.password;
-                }
-            }
-            return this;
-        },
-        then: function (resolve, reject) {
-            resolve(this.data);
-        }
-    };
-}
-
-module.exports = { User, Certificate, Feedback, FraudReport };
+module.exports = { User, Certificate, Feedback, ActivityLog, CertificateRequest, VerificationHistory, FraudReport };
