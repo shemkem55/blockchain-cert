@@ -4,15 +4,15 @@
     "rewrites": [
         {
             "source": "/auth/:path*",
-            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/auth/:path*"
+            "destination": "https://blockchain-cert-backend.onrender.com/auth/:path*"
         },
         {
             "source": "/certificates/:path*",
-            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/certificates/:path*"
+            "destination": "https://blockchain-cert-backend.onrender.com/certificates/:path*"
         },
         {
             "source": "/api/:path*",
-            "destination": "https://REPLACE_WITH_YOUR_RENDER_URL.onrender.com/:path*"
+            "destination": "https://blockchain-cert-backend.onrender.com/:path*"
         },
         {
             "source": "/(.*)",
