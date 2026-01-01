@@ -16,7 +16,7 @@ services:
       - key: EMAIL_PASSWORD
         sync: false
       - key: JWT_SECRET
-        generate: true
+        sync: false
       - key: DB_TYPE
         value: mariadb
       - key: DB_HOST
