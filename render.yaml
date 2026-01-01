@@ -3,6 +3,7 @@ services:
     name: blockchain-cert-backend
     env: node
     plan: free
+    rootDirectory: certificate-backend
     buildCommand: npm install
     startCommand: node server.js
     envVars:
