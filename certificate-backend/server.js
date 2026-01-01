@@ -104,8 +104,17 @@ const corsOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173,http://l
 app.use(
     cors({
         origin: (origin, callback) => {
+            // Allow requests with no origin (like mobile apps or curl)
             if (!origin) return callback(null, true);
+
+            // Check if origin is in allowed list
             if (corsOrigins.includes(origin)) return callback(null, true);
+
+            // Flexibly allow Vercel subdomains (including preview URLs)
+            if (origin.endsWith(".vercel.app")) {
+                return callback(null, true);
+            }
+
             return callback(new Error(`CORS blocked for origin: ${origin}`));
         },
         credentials: true,
