@@ -4,11 +4,11 @@
     "rewrites": [
         {
             "source": "/auth/:path*",
-            "destination": "/frontend v2/api/auth/:path*"
+            "destination": "/api/auth/:path*"
         },
         {
             "source": "/health",
-            "destination": "/frontend v2/api/health"
+            "destination": "/api/health"
         },
         {
             "source": "/(.*)",
@@ -16,7 +16,7 @@
         }
     ],
     "functions": {
-        "frontend v2/api/**/*.js": {
+        "api/**/*.js": {
             "maxDuration": 10
         }
     }
