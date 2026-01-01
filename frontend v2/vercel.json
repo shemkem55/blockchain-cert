@@ -3,7 +3,6 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": null,
   "functions": {
     "api/**/*.js": {
       "runtime": "@vercel/node"

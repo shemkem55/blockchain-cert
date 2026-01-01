@@ -1,5 +1,5 @@
-import { User } from '../../../lib/db';
-import logger from '../../../lib/logger';
+import { User } from '../../lib/db';
+import logger from '../../lib/logger';
 import jwt from 'jsonwebtoken';
 import { body, validationResult } from 'express-validator';
 

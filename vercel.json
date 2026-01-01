@@ -1,0 +1,23 @@
+{
+    "buildCommand": "cd 'frontend v2' && npm install && npm run build",
+    "outputDirectory": "frontend v2/dist",
+    "rewrites": [
+        {
+            "source": "/auth/:path*",
+            "destination": "/frontend v2/api/auth/:path*"
+        },
+        {
+            "source": "/health",
+            "destination": "/frontend v2/api/health"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ],
+    "functions": {
+        "frontend v2/api/**/*.js": {
+            "runtime": "@vercel/node"
+        }
+    }
+}

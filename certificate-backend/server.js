@@ -206,28 +206,40 @@ async function initBlockchain() {
         blockchainLastError = null;
 
         // Read deployed address
-        const addressPath = path.join(__dirname, "../certificate-verification./deployed_address.json");
+        const addressPath = path.join(__dirname, "artifacts/deployed_address.json");
         if (!fs.existsSync(addressPath)) {
-            blockchainReady = false;
-            blockchainNetwork = null;
-            blockchainContractAddress = null;
-            blockchainLastError = "deployed_address.json not found";
-            console.warn("⚠️ Blockchain Warning: deployed_address.json not found. Run deployment script first.");
-            startBlockchainRetry();
-            return;
+            // Fallback for local dev if not yet copied, though we prefer the local artifacts folder
+            const devPath = path.join(__dirname, "../certificate-verification./deployed_address.json");
+            if (fs.existsSync(devPath)) {
+                fs.copyFileSync(devPath, addressPath);
+            } else {
+                blockchainReady = false;
+                blockchainNetwork = null;
+                blockchainContractAddress = null;
+                blockchainLastError = "deployed_address.json not found";
+                console.warn("⚠️ Blockchain Warning: deployed_address.json not found. Run deployment script first.");
+                startBlockchainRetry();
+                return;
+            }
         }
         const { address } = JSON.parse(fs.readFileSync(addressPath, "utf8"));
         blockchainContractAddress = address;
 
         // Read ABI
-        const artifactPath = path.join(__dirname, "../certificate-verification./artifacts/contracts/SoulboundCertificate.sol/SoulboundCertificate.json");
+        const artifactPath = path.join(__dirname, "artifacts/SoulboundCertificate.json");
         if (!fs.existsSync(artifactPath)) {
-            blockchainReady = false;
-            blockchainNetwork = null;
-            blockchainLastError = "artifact not found";
-            console.warn("⚠️ Blockchain Warning: Artifact not found.");
-            startBlockchainRetry();
-            return;
+            // Fallback for local dev
+            const devArtifactPath = path.join(__dirname, "../certificate-verification./artifacts/contracts/SoulboundCertificate.sol/SoulboundCertificate.json");
+            if (fs.existsSync(devArtifactPath)) {
+                fs.copyFileSync(devArtifactPath, artifactPath);
+            } else {
+                blockchainReady = false;
+                blockchainNetwork = null;
+                blockchainLastError = "artifact not found";
+                console.warn("⚠️ Blockchain Warning: Artifact not found.");
+                startBlockchainRetry();
+                return;
+            }
         }
         const artifact = JSON.parse(fs.readFileSync(artifactPath, "utf8"));
 

@@ -1,5 +1,5 @@
-import { connectDB } from '../../../lib/db';
-import logger from '../../../lib/logger';
+import { connectDB } from '../lib/db';
+import logger from '../lib/logger';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
