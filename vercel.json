@@ -39,8 +39,8 @@
             "destination": "https://blockchain-cert-backend.onrender.com/health"
         },
         {
-            "source": "/api/:path*",
-            "destination": "https://blockchain-cert-backend.onrender.com/:path*"
+            "source": "/uploads/:path*",
+            "destination": "https://blockchain-cert-backend.onrender.com/uploads/:path*"
         },
         {
             "source": "/(.*)",
