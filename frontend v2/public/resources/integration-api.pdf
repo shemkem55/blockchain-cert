@@ -1,0 +1,9 @@
+UNIVERSITY INTEGRATION API
+Technical Documentation v1.0
+
+Endpoints:
+- POST /api/v1/mint-certificate
+- GET /api/v1/verify/:id
+- POST /api/v1/revoke
+
+Requires API Key and institutional signature.

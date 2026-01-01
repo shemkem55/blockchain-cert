@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TUM - Not Found (#404)</title>
+  <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="DAEzwHdf0cTSJjG-dO9r3fkpfepvTF1znJbMatCCqD9PU1GqEw60q5t1WI8Yul62iEcMoiFhBRby7_0D5Pvrfg==">
+
+<link href="/resources/public/favicon.ico" rel="icon" sizes="64x64">
+<link href="/resources/assets/uniLinkWeb/css/style.css" rel="stylesheet">
+<link href="/resources/assets/uniLinkWeb/js/menuzord/css/menuzord.css" rel="stylesheet">
+<link id="menuzord-menu-skins" href="/resources/assets/uniLinkWeb/css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet">
+<link href="/resources/assets/uniLinkWeb/js/revolution-slider/css/rs6.css" rel="stylesheet">
+<link href="/resources/assets/uniLinkWeb/js/revolution-slider/extra-rev-slider1.css" rel="stylesheet">  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XGVK5J0L4R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XGVK5J0L4R');
+</script>
+<!-- End Google tag (gtag.js) -->
+<body class="tm-container-1340px has-side-panel side-panel-right">
+<style>
+    .cc-btn.cc-deny {background-color: #000 !important; color: #fff !important;}
+    .cc-btn.cc-deny:hover {background-color: #444 !important;text-decoration: none !important;}
+</style>
+  <div id="wrapper" class="clearfix">
+    <!-- Header -->
+    <header id="header" class="header header-layout-type-header-3rows header-nav-left">
+      <div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-auto header-top-left align-self-center text-center text-xl-left">
+        <ul class="element contact-info">
+                      <li class="text-theme-colored6"><a href="/downloads/index?type=finance">Financial Statements</a></li>
+                      <li class="text-theme-colored6"><a href="https://library.tum.ac.ke/">Library Services</a></li>
+                      <li class="text-theme-colored6"><a href="https://conference.tum.ac.ke/">Multidisciplinary Conference</a></li>
+                      <li class="text-theme-colored6"><a href="https://journals.tum.ac.ke/">TUM Journal</a></li>
+                  </ul>
+      </div>
+      <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-right">
+        <div class="element pt-0 pb-0">
+          <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled clearfix">
+            <li><a class="social-link" target="_blank" href="https://www.facebook.com/TechnicalUniversityOfMombasa/"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="social-link" target="_blank" href="https://x.com/Tum001Ke"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="social-link" target="_blank" href="https://www.youtube.com/@tum_ke"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-left">
+        <a class="menuzord-brand site-brand" href="/">
+          <img class="logo-default logo-1x" src="/resources/public/logo.png" alt="Logo">
+          <img class="logo-default logo-2x retina" src="/resources/public/logo.png" alt="Logo">
+        </a>
+      </div>
+      <div class="col-xl-auto align-self-center ms-xl-auto header-mid-right text-center text-xl-right">
+        <div class="header-mid-column3-container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto element text-center text-md-start">
+              <div class="contact-info-box big-icon">
+                <div class="left-thumb"> <a href="tel:+254733955377"> <i class="fa fa-phone font-icon  sm-display-block"></i> </a></div>
+                <div class="media-body">
+                  <h5 class="title">Call us at</h5>
+                  <div class="subtitle"><a href="tel:+254733955377">+254733955377</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto element text-center text-md-start">
+              <div class="contact-info-box big-icon">
+                <div class="left-thumb"> <a href="mailto:info@tum.ac.ke"> <i class="fa fa-envelope font-icon  sm-display-block"></i> </a></div>
+                <div class="media-body">
+                  <h5 class="title">Email us</h5>
+                  <div class="subtitle"><a href="mailto:info@tum.ac.ke">info@tum.ac.ke</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto element text-center text-md-start">
+              <div class="contact-info-box big-icon">
+                <div class="left-thumb"> <a href="#"> <i class="flaticon-contact-025-world font-icon  sm-display-block"></i> </a></div>
+                <div class="media-body">
+                  <h5 class="title">Physical Address</h5>
+                  <div class="subtitle">Tom Mboya Street Tudor, Msa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header-nav tm-enable-navbar-hide-on-scroll">
+    <div class="header-nav-wrapper navbar-scrolltofixed">
+        <div class="menuzord-container header-nav-container">
+            <div class="container position-relative">
+                <div class="row header-nav-col-row">
+                    <div class="col-sm-auto align-self-center">
+                        <nav id="top-primary-nav" class="menuzord theme-color1" data-effect="slide" data-animation="none" data-align="right">
+                            <ul id="main-nav" class="menuzord-menu">
+                                <li class="active menu-item">
+                                    <a href="/">HOME</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">ABOUT US</a>
+                                    <div class="megamenu megamenu-fullwidth megamenu-position-left">
+                                        <div class="megamenu-row">
+                                            <div class="col4">
+                                                <ul class="list-unstyled list-dashed">
+                                                    <li class="menu-item">
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="/about/philosophy">Our Philosophy</a></li>
+                                                            <li><a href="/about/historical-background">Historical Background</a></li>
+                                                            <li><a href="/about/governance-structure">Governance Structure</a></li>
+                                                            <li><a href="/about/council">Council Members</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col4">
+                                                <ul class="list-unstyled list-dashed">
+                                                    <li class="menu-item">
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="/about/umb">UMB Members</a></li>
+                                                            <li><a href="/about/senate">Senate Members</a></li>
+                                                            <li><a href="/about/are">Division of ARE</a></li>
+                                                            <li><a href="/about/afp">Division of AFP</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col4">
+                                                <ul class="list-unstyled list-dashed">
+                                                    <li class="menu-item">
+                                                        <ul class="list-unstyled">
+                                                            <!-- <li><a href="/about">Campuses</a></li>
+                                                            <li><a href="/about">Directorates</a></li>
+                                                            <li><a href="/about">Citizens' Service Delivery Charter</a></li>
+                                                            <li><a href="/about">Partners</a></li> -->
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">ACADEMICS<span class="indicator"></span></a>
+                                    <ul class="dropdown" style="right: auto; display: none;">
+                                        <li><a href="#">Schools<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                            <ul class="dropdown" style="display: none;">
+                                                                                                    <li><a href="/schools/dashboard?school_id=soahs">School of Applied and Health Sciences</a></li>
+                                                                                                    <li><a href="/schools/dashboard?school_id=sob">School of Business</a></li>
+                                                                                                    <li><a href="/schools/dashboard?school_id=soet">School of Engineering and Technology</a></li>
+                                                                                                    <li><a href="/schools/dashboard?school_id=sohss">School of Humanities and Social Sciences</a></li>
+                                                                                            </ul>
+                                        </li>
+                                        <li><a href="#">Institutes<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                            <ul class="dropdown" style="display: none;">
+                                                                                                    <li><a href="/schools/dashboard?school_id=ici">Institute of Computing and Informatics</a></li>
+                                                                                                    <li><a href="/schools/dashboard?school_id=imss">Institute of Maritime and Seafaring Studies</a></li>
+                                                                                                <li><a href="/tvet">TVET Institute</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item"><a href="#">ADMISSIONS</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Programmes<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                            <ul class="dropdown" style="display: none;">
+                                                <li><a href="/programmes/graduate">Post Graduate</a></li>
+                                                <li><a href="/programmes/undergraduate">Undergraduate</a></li>
+                                                <li><a href="/programmes/diploma">Diploma</a></li>
+                                                <li><a href="/programmes/certificate">Certificate</a></li>
+                                                <li><a href="/programmes/short-courses">Short Courses</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/admissions/requirements">Application Requirements</a></li>
+                                        <li><a href="/admissions/guide">Application Guide</a></li>
+                                        <li><a href="/admissions/documents">Admission Documents</a></li>
+                                        <li><a href="/admissions/fees">Fee Structures</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">RESEARCH</a>
+                                </li>
+                                <li class="menu-item"><a href="#">PORTALS</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Staff Portals </a>
+                                            <ul class="dropdown">
+                                                <li><a href="https://staff.tum.ac.ke">Intranet</a></li>
+                                                <li><a href="https://hr.tum.ac.ke">HR Portal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://elearning.tum.ac.ke">E-Learning Portal</a></li>
+                                        <li><a href="https://iap.tum.ac.ke">Industrial Attachment</a></li>
+                                        <li><a href="https://clearance.tum.ac.ke">Online Clearence</a></li>
+                                        <li><a href="https://smis.tum.ac.ke">TUMMIS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/campus-life">CAMPUS LIFE</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">MEDIA DESK<span class="indicator"></span></a>
+                                    <ul class="dropdown" style="right: auto; display: none;">
+                                        <li><a href="/news">News</a></li>
+                                        <li><a href="/events">Events</a></li>
+                                        <li><a href="/notices">Noticeboard</a></li>
+                                        <li><a href="/downloads">Downloads</a></li>
+                                        <li><a href="/frequently-asked-questions">FAQs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="https://smis.tum.ac.ke/application/register">APPLY NOW</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-auto ms-auto align-self-center">
+                        <ul class="list-inline nav-side-icon-list">
+                            <li class="hidden-mobile-mode"><a href="#" id="top-nav-search-btn"><i class="search-icon fa fa-search"></i></a></li>
+                        </ul>
+                        <div id="top-nav-search-form" class="clearfix">
+                            <form action="#" method="GET">
+                                <input type="text" name="s" value="" placeholder="Type and Press Enter..." autocomplete="off" />
+                            </form>
+                            <a href="#" id="close-search-btn"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-block d-xl-none">
+                    <div class="col-12">
+                        <nav id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+                            <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </header>
+
+    <!-- Start main-content -->
+    <div class="main-content-area">
+      <section id="home" class="fullscreen bg-lightest" style="height: 629px;">
+    <div class="display-table text-center">
+        <div class="">
+            <div class="container pt-0 pb-0">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-lg-6">
+                        <h1 class="text-theme-colored1 font-weight-600 font-size-200">404</h1>
+                        <h3 class="mt-0 mb-10">Page not found.</h3>
+                        <p>The above error occurred while the Web server was processing your request.</p>
+                        <a class="btn btn-theme-colored1 btn-sm smooth-scroll" href="/"><i class="fa fa-hand-o-left font-size-16 mr-10"></i>Return Home</a>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+    <!-- end main-content -->
+    <script src="https://cdn.userway.org/widget.js" data-account="CFpysKJsUw"></script> 
+    <!-- Footer -->
+    <footer id="footer" class="footer layer-overlay overlay-dark-9">
+      <div class="footer-widget-area">
+        <div class="container pt-10 pb-10">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="widget widget_nav_menu">
+                <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Contact Us</h4>
+                <div class="description">
+                  Tom Mboya Street Tudor, Msa<br>
+                  P.O Box 90420-80100 MSA <br>
+                  Tel : +254733955377<br>
+                   +254208095368 /  +254208055365<br>
+                  Email: <a href="mailto:info@tum.ac.ke">info@tum.ac.ke</a>
+                </div>
+              </div>
+              <ul class="styled-icons icon-dark icon-theme-colored1 icon-rounded clearfix">
+                <li><a class="social-link" href="https://www.facebook.com/TechnicalUniversityOfMombasa/"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="social-link" href="https://x.com/Tum001Ke"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="social-link" href="https://www.youtube.com/@tum_ke"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="widget widget_nav_menu">
+                <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Student Resources</h4>
+                <ul>
+                                      <li><a href="https://elearning.tum.ac.ke/">E-Learning</a></li>
+                                      <li><a href="https://eregistrar.tum.ac.ke/Campuscura/?TenantID=tum#login;TenantID=tum;Apply=false">E-Registrar</a></li>
+                                      <li><a href="https://portal.hef.co.ke/auth/signin">HEF Portal</a></li>
+                                      <li><a href="https://mail.google.com/a/students.tum.ac.ke">Student Mail</a></li>
+                                  </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="widget widget_nav_menu">
+                <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Staff Resources</h4>
+                <ul>
+                                      <li><a href="https://hr.tum.ac.ke/">HR Portal</a></li>
+                                      <li><a href="https://conference.ke">KENET Web Conference</a></li>
+                                      <li><a href="https://mail.google.com/a/tum.ac.ke">Staff Mail</a></li>
+                                      <li><a href="https://staff.tum.ac.ke">Staff Portal</a></li>
+                                      <li><a href="/profiles">Staff Profiles</a></li>
+                                  </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="widget widget_nav_menu">
+                <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Important Links</h4>
+                <ul>
+                                      <li><a href="https://jobs.tum.ac.ke/">Career Opportunities</a></li>
+                                      <li><a href="https://tum.ac.ke/procurement">Procurement</a></li>
+                                      <li><a href="https://www.tum.ac.ke/about/csdc">Service Delivery Charter</a></li>
+                                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom" data-tm-bg-color="#D89837">
+          <div class="container">
+            <div style="color: white; font-weight:500" class="row pt-20 pb-20">
+              <div class="col-sm-6">
+                <div class="footer-paragraph">
+                  Copyright © 2025 Technical University of Mombasa. All Rights Reserved.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-paragraph text-right">
+                  <i>"Jiddu Tajidu"</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+  <!-- Cookie Consent JS -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#097B3E", text: "#ffffff" },
+      button: { background: "#D89837", text: "#ffffff" }
+    },
+    theme: "block",   // looks neat for modal
+    position: "bottom", // center modal
+    type: "opt-in",     // shows Accept + Reject
+    content: {
+      message: "We use cookies to personalize content, improve site performance and analyze traffic. By clicking 'Accept', you agree to the storing of cookies on your device. You can reject non-essential cookies, and the site will still function, but some features may not be fully available.",
+      allow: "Accept",
+      deny: "Reject",
+      link: "Read our Cookies Policy",
+      href: "/site/cookies"
+    },
+    onStatusChange: function(status) {
+      if (this.hasConsented()) {
+        console.log(" Cookies accepted");
+        // enable tracking scripts here if needed (Google Analytics, etc.)
+      } else {
+        console.log(" Cookies rejected");
+        // block or disable scripts
+      }
+    }
+  });
+});
+</script>
+
+  <!-- <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script> -->
+  <!-- <script src="https://cdn.userway.org/widget.js" data-account="CFpysKJsUw"></script> -->
+  <script src="/resources/assets/uniLinkCore/4d66234a/jquery.js"></script>
+<script src="/resources/assets/uniLinkCore/5e4c86b0/yii.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/popper.min.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/bootstrap.min.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/javascript-plugins-bundle.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/menuzord/js/menuzord.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/revolution-slider/js/revolution.tools.min.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/revolution-slider/js/rs6.min.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/revolution-slider/extra-rev-slider1.js"></script>
+<script src="/resources/assets/uniLinkWeb/js/custom.js"></script></body>
+
+</html>

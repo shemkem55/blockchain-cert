@@ -1,0 +1,16 @@
+/* EmployerPortal specific styles */
+
+.legend-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+}
+
+/* Color variants for legend indicators */
+.legend-indicator[data-color="#10b981"] {
+    background-color: #10b981;
+}
+
+.legend-indicator[data-color="#ef4444"] {
+    background-color: #ef4444;
+}
