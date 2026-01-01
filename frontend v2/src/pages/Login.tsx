@@ -61,7 +61,7 @@ export default function Login() {
         data = await res.json();
       } else {
         const text = await res.text();
-        throw new Error(`Server returned non-JSON response: ${text.substring(0, 100)}`);
+        throw new Error(`Server returned non-JSON response. This usually means the backend URL is wrong or the service is down. Response start: ${text.substring(0, 500)}`);
       }
 
       if (!res.ok) {
@@ -117,7 +117,7 @@ export default function Login() {
         data = await res.json();
       } else {
         const text = await res.text();
-        throw new Error(`Server returned non-JSON response: ${text.substring(0, 100)}`);
+        throw new Error(`Server returned non-JSON response. This usually means the backend URL is wrong or the service is down. Response start: ${text.substring(0, 500)}`);
       }
 
       if (!res.ok) throw new Error(data.error || 'Google login failed');
