@@ -1,75 +1,10 @@
-nohup: ignoring input
 
 > vite_react_shadcn_ts@0.0.0 dev
 > vite
 
 
-  VITE v5.4.21  ready in 714 ms
+  VITE v5.4.21  ready in 1035 ms
 
   ➜  Local:   http://localhost:8080/
-  ➜  Network: http://192.168.8.120:8080/
-6:28:47 PM [vite] hmr update /src/components/CertificateTemplate.tsx, /src/index.css
-6:29:04 PM [vite] hmr update /src/pages/RegistrarPortal.tsx, /src/index.css
-6:45:06 PM [vite] hmr update /src/components/blockchain/CertificateDetail.tsx, /src/index.css
-6:51:31 PM [vite] hmr update /src/components/CertificateTemplate.tsx, /src/index.css
-6:54:07 PM [vite] hmr update /src/components/CertificateTemplate.tsx, /src/index.css
-6:59:34 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-6:59:34 PM [vite] Internal server error:   x Expected '</', got '{'
-      ,-[/home/overlord55/Videos/Blockchain Cert/frontend v2/src/pages/EmployerPortal.tsx:1788:1]
- 1785 |             </div>
- 1786 |           )}
- 1787 |         </div>
- 1788 |       </main        {/* Report Fraud Modal */}
-      :                     ^
- 1789 |       {isReportModalOpen && (
- 1790 |         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
- 1791 |           <motion.div
-      `----
-
-
-Caused by:
-    Syntax Error
-  Plugin: vite:react-swc
-  File: /home/overlord55/Videos/Blockchain Cert/frontend v2/src/pages/EmployerPortal.tsx
-  
-6:59:50 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:00:15 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:06:28 PM [vite] hmr update /src/components/CertificateTemplate.tsx, /src/index.css
-7:10:38 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:10:38 PM [vite] Internal server error:   x Expression expected
-      ,-[/home/overlord55/Videos/Blockchain Cert/frontend v2/src/pages/EmployerPortal.tsx:1078:1]
- 1075 |                                   toast.error('Could not resolve Certificate ID');
- 1076 |                                 }
- 1077 |                               }}
- 1078 |                       </div>
-      :                       ^
- 1079 |                     </div>
- 1080 | 
- 1081 |                       {/* Content Grid */}
-      `----
-  x Unterminated regexp literal
-      ,-[/home/overlord55/Videos/Blockchain Cert/frontend v2/src/pages/EmployerPortal.tsx:1078:1]
- 1075 |                                   toast.error('Could not resolve Certificate ID');
- 1076 |                                 }
- 1077 |                               }}
- 1078 |                       </div>
-      :                        ^^^^^
- 1079 |                     </div>
- 1080 | 
- 1081 |                       {/* Content Grid */}
-      `----
-
-
-Caused by:
-    Syntax Error
-  Plugin: vite:react-swc
-  File: /home/overlord55/Videos/Blockchain Cert/frontend v2/src/pages/EmployerPortal.tsx
-  
-7:11:22 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:18:07 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:18:59 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:19:15 PM [vite] hmr update /src/pages/EmployerPortal.tsx, /src/index.css
-7:22:54 PM [vite] vite.config.ts changed, restarting server...
-7:22:54 PM [vite] server restarted.
-7:24:58 PM [vite] vite.config.ts changed, restarting server...
-7:24:58 PM [vite] server restarted.
+  ➜  Network: http://10.110.236.37:8080/
+  ➜  press h + enter to show help

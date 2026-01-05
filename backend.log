@@ -1,4 +1,3 @@
-nohup: ignoring input
 
 > certificate-backend@1.0.0 start
 > node server.js
@@ -8,664 +7,142 @@ nohup: ignoring input
 ✅ Connected to SQLite database: /home/overlord55/Videos/Blockchain Cert/certificate-backend/database.sqlite
 ✅ Database tables created successfully
 ✅ Security events table created/verified
-2025-12-31 18:23:16:2316 [32minfo[39m: [32m🚀 HTTP Server running on port 3000[39m
-2025-12-31 18:23:16:2316 [32minfo[39m: [32m✅ Database initialized successfully[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
+2026-01-02 16:45:08:458 [32minfo[39m: [32m🚀 HTTP Server running on port 3000[39m
+2026-01-02 16:45:08:458 [32minfo[39m: [32m✅ Database initialized successfully[39m
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
 ✅ Email service ready - OTP will be sent via email
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-2025-12-31 18:26:15:2615 [33mwarn[39m: [33m404 - Route not found: /favicon.ico - /favicon.ico - GET - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔎 LOGIN request for: registrar@must.ac.ke
-🔍 LOGIN: user found= true
-2025-12-31 18:26:59:2659 [33mwarn[39m: [33m[SECURITY] SUCCESSFUL_LOGIN[39m
-sending login response payload: {"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWpsODRuZ2otODlmMTAxZTgiLCJlbWFpbCI6InJlZ2lzdHJhckBtdXN0LmFjLmtlIiwicm9sZSI6InJlZ2lzdHJhciIsInNlc3Npb25JZCI6IjY5YzUyNWRjNjA4NTc3NjVkYzJkZTlmZjY2YzdjNmFkZWFiODBjNTMzN2E3M2MxMDcxNjRiZjQ0OGQ2NTFhZDciLCJpYXQiOjE3NjcxOTQ4MTksImV4cCI6MTc2NzE5NTcxOX0.4GrfE37QCyqS1pINKHFx4ggiKhNa8EtC88upA9ursBM","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWpsODRuZ2otODlmMTAxZTgiLCJlbWFpbCI6InJlZ2lzdHJhckBtdXN0LmFjLmtlIiwic2Vzc2lvbklkIjoiNjljNTI1ZGM2MDg1Nzc2NWRjMmRlOWZmNjZjN2M2YWRlYWI4MGM1MzM3YTczYzEwNzE2NGJmNDQ4ZDY1MWFkNyIsImlhdCI6MTc2NzE5NDgxOSwiZXhwIjoxNzY5Nzg2ODE5fQ.xUhR4iNqn36iJORYXYB2V4nX8_ExURYBBIdOcmaWcxA","user":{"email":"registrar@must.ac.ke","role":"registrar","university":"Meru University of Science and Technology","organizationName":null,"registrationNumber":null,"isVerified":true},"otpRequired":false}
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔎 LOGIN request for: registrar@must.ac.ke
-🔍 LOGIN: user found= true
-2025-12-31 18:47:12:4712 [33mwarn[39m: [33m[SECURITY] SUCCESSFUL_LOGIN[39m
-sending login response payload: {"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWpsODRuZ2otODlmMTAxZTgiLCJlbWFpbCI6InJlZ2lzdHJhckBtdXN0LmFjLmtlIiwicm9sZSI6InJlZ2lzdHJhciIsInNlc3Npb25JZCI6ImFiNmMzMDJhYTc5ZGNmYjU0ZjE5ZTQ0YmVlZTJmNDE0ZjI0NDM1MjYwYjc1MzdjMmU3ZTA1MzllMmQzN2JlNDkiLCJpYXQiOjE3NjcxOTYwMzIsImV4cCI6MTc2NzE5NjkzMn0.raBOYBAd15sOp0tGZomFsSQ_ERUcCkWuyOCxT4tqk2s","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWpsODRuZ2otODlmMTAxZTgiLCJlbWFpbCI6InJlZ2lzdHJhckBtdXN0LmFjLmtlIiwic2Vzc2lvbklkIjoiYWI2YzMwMmFhNzlkY2ZiNTRmMTllNDRiZWVlMmY0MTRmMjQ0MzUyNjBiNzUzN2MyZTdlMDUzOWUyZDM3YmU0OSIsImlhdCI6MTc2NzE5NjAzMiwiZXhwIjoxNzY5Nzg4MDMyfQ.6s-451i1Pv6UM61Rn9uguG9BN2myDz62fDqUSAUkBJ4","user":{"email":"registrar@must.ac.ke","role":"registrar","university":"Meru University of Science and Technology","organizationName":null,"registrationNumber":null,"isVerified":true},"otpRequired":false}
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-✅ Cleaned up 1 expired sessions
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔎 LOGIN request for: kipyegonshem2@gmail.com
-🔍 LOGIN: user found= true
-2025-12-31 19:03:35:335 [33mwarn[39m: [33m[SECURITY] SUCCESSFUL_LOGIN[39m
-sending login response payload: {"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVyIiwic2Vzc2lvbklkIjoiYTcwNGZkNTAzZjJlYjMwM2Y3MDg0NzA0OTYwZWQ2MmJlZmY3MTQ0NWU5YjY2ZGVhZTliY2U0ODc0YWJlMzA2NSIsImlhdCI6MTc2NzE5NzAxNSwiZXhwIjoxNzY3MTk3OTE1fQ.d06Q_YdEQImrGGUWr94ITvbOUtF1sZe94QeDGEmIZzo","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwic2Vzc2lvbklkIjoiYTcwNGZkNTAzZjJlYjMwM2Y3MDg0NzA0OTYwZWQ2MmJlZmY3MTQ0NWU5YjY2ZGVhZTliY2U0ODc0YWJlMzA2NSIsImlhdCI6MTc2NzE5NzAxNSwiZXhwIjoxNzY5Nzg5MDE1fQ.HddXXgh7yKgw4QVMjg-Cg_70s858bGhPW4RfrklKYUA","user":{"email":"kipyegonshem2@gmail.com","role":"employer","university":null,"organizationName":null,"registrationNumber":null,"isVerified":true},"otpRequired":false}
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:04:43:443 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:47:447 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:48:448 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:48:448 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:48:448 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:48:448 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:04:49:449 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:08:26:826 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-✅ Cleaned up 1 expired sessions
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔎 LOGIN request for: kipyegonshem2@gmail.com
-🔍 LOGIN: user found= true
-2025-12-31 19:19:43:1943 [33mwarn[39m: [33m[SECURITY] SUCCESSFUL_LOGIN[39m
-sending login response payload: {"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVyIiwic2Vzc2lvbklkIjoiMjIyMDBhNmUxOTExNTI3Mzc5ZTQ3YjE3ZmY2OWFkNWY1ZTYzZTU0NWE1YTYxZWU3ZjM0ZTliYWRkMTdlMGEzMiIsImlhdCI6MTc2NzE5Nzk4MywiZXhwIjoxNzY3MTk4ODgzfQ.nhnMhX937eyo0K9ULZrYZdFvVrb0svaLA4bSqmpbMj8","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwic2Vzc2lvbklkIjoiMjIyMDBhNmUxOTExNTI3Mzc5ZTQ3YjE3ZmY2OWFkNWY1ZTYzZTU0NWE1YTYxZWU3ZjM0ZTliYWRkMTdlMGEzMiIsImlhdCI6MTc2NzE5Nzk4MywiZXhwIjoxNzY5Nzg5OTgzfQ.NbwMV8cyPd9LvaPEVtF5t2CaNakIt6IYzuXhukqk9So","user":{"email":"kipyegonshem2@gmail.com","role":"employer","university":null,"organizationName":null,"registrationNumber":null,"isVerified":true},"otpRequired":false}
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:19:58:1958 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:20:00:200 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:22:55:2255 [33mwarn[39m: [33m404 - Route not found: /employer - /employer - GET - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:24:12:2412 [33mwarn[39m: [33m404 - Route not found: /employer - /employer - GET - ::1[39m
-2025-12-31 19:24:13:2413 [33mwarn[39m: [33m404 - Route not found: /employer - /employer - GET - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:27:03:273 [33mwarn[39m: [33m404 - Route not found: /employer/reports - /employer/reports - GET - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:27:33:2733 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:27:38:2738 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-✅ Cleaned up 1 expired sessions
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔎 LOGIN request for: kipyegonshem2@gmail.com
-🔍 LOGIN: user found= true
-🔎 LOGIN request for: kipyegonshem2@gmail.com
-🔍 LOGIN: user found= true
-2025-12-31 19:49:24:4924 [33mwarn[39m: [33m[SECURITY] SUCCESSFUL_LOGIN[39m
-sending login response payload: {"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVyIiwic2Vzc2lvbklkIjoiYjE1MTBiMjk2N2ExMWNiNDA1MzZjNjk3Njg1YzY5ZjliMWM2MDdmZTljMTZhYjU1ZmRmMTgyMTNlM2EzODY1MCIsImlhdCI6MTc2NzE5OTc2NCwiZXhwIjoxNzY3MjAwNjY0fQ.Cf_EyYHC-FiYu5GwHNSfbyNnXZqo3lmZgKrS0DlIU7o","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVfbWo1b2I2aWUtNmU0YmZkMTIiLCJlbWFpbCI6ImtpcHllZ29uc2hlbTJAZ21haWwuY29tIiwic2Vzc2lvbklkIjoiYjE1MTBiMjk2N2ExMWNiNDA1MzZjNjk3Njg1YzY5ZjliMWM2MDdmZTljMTZhYjU1ZmRmMTgyMTNlM2EzODY1MCIsImlhdCI6MTc2NzE5OTc2NCwiZXhwIjoxNzY5NzkxNzY0fQ.Et2df1ELVyiDXBglUf3zv0WzVjGCO_ENG_LYEqUUNR8","user":{"email":"kipyegonshem2@gmail.com","role":"employer","university":null,"organizationName":null,"registrationNumber":null,"isVerified":true},"otpRequired":false}
-2025-12-31 19:49:25:4925 [33mwarn[39m: [33m404 - Route not found: /employer/reports - /employer/reports - GET - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:49:35:4935 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:36:4936 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:36:4936 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:37:4937 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:37:4937 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:37:4937 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:37:4937 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:49:37:4937 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-✅ Cleaned up 1 expired sessions
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:54:56:5456 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 19:55:03:553 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:55:07:557 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-2025-12-31 19:55:07:557 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-2025-12-31 20:08:12:812 [33mwarn[39m: [33m404 - Route not found: /certificates/report - /certificates/report - POST - ::1[39m
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-🔐 Auth Failure: No token provided
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-✅ Cleaned up 1 expired sessions
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
-⚠️ Blockchain Warning: BLOCKCHAIN_ADMIN_PRIVATE_KEY not set
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.
+⚠️ Blockchain Warning: No contract deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Deploy the contract to this network.

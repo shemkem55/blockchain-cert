@@ -61,7 +61,15 @@ export default function Login() {
         data = await res.json();
       } else {
         const text = await res.text();
-        throw new Error(`Server returned non-JSON response. This usually means the backend URL is wrong or the service is down. Response start: ${text.substring(0, 500)}`);
+        console.error('Non-JSON Response:', text);
+        try {
+          // Try to extract title from HTML
+          const titleMatch = text.match(/<title>(.*?)<\/title>/i);
+          const title = titleMatch ? titleMatch[1] : 'Unknown Error';
+          throw new Error(`Server Error (${res.status}): ${title}. Full response logged to console.`);
+        } catch (e) {
+          throw new Error(`Server returned non-JSON response (${res.status}). First 200 chars: ${text.substring(0, 200)}...`);
+        }
       }
 
       if (!res.ok) {
