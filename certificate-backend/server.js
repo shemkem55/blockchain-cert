@@ -110,8 +110,8 @@ app.use(
             // Check if origin is in allowed list
             if (corsOrigins.includes(origin)) return callback(null, true);
 
-            // Flexibly allow Vercel subdomains (including preview URLs)
-            if (origin.endsWith(".vercel.app")) {
+            // Allow production domains and common subdomains
+            if (origin.endsWith(".netlify.app") || origin.endsWith(".vercel.app") || origin.endsWith(".onrender.com")) {
                 return callback(null, true);
             }
 
@@ -510,7 +510,7 @@ const validateBodyCertId = body("id")
 // ----------------------
 
 app.get("/", (req, res) => {
-    res.send("✅ Backend is running with SQLite Database and Enhanced Security Features...");
+    res.send("✅ Backend is running with Enhanced Security Features...");
 });
 
 // ---- Security Routes ----

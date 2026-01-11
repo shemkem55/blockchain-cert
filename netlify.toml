@@ -1,0 +1,59 @@
+[build]
+  base = "frontend v2"
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/auth/*"
+  to = "https://blockchain-cert-backend.onrender.com/auth/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/certificates/*"
+  to = "https://blockchain-cert-backend.onrender.com/certificates/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/ai/*"
+  to = "https://blockchain-cert-backend.onrender.com/ai/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/feedback/*"
+  to = "https://blockchain-cert-backend.onrender.com/feedback/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://blockchain-cert-backend.onrender.com/admin/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/employer/*"
+  to = "https://blockchain-cert-backend.onrender.com/employer/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/registrar/*"
+  to = "https://blockchain-cert-backend.onrender.com/registrar/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/student/*"
+  to = "https://blockchain-cert-backend.onrender.com/student/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/health"
+  to = "https://blockchain-cert-backend.onrender.com/health"
+  status = 200
+
+[[redirects]]
+  from = "/uploads/*"
+  to = "https://blockchain-cert-backend.onrender.com/uploads/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

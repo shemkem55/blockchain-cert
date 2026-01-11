@@ -1,0 +1,14 @@
+# API Proxies
+/auth/*          https://blockchain-cert-backend.onrender.com/auth/:splat          200
+/certificates/*  https://blockchain-cert-backend.onrender.com/certificates/:splat  200
+/ai/*             https://blockchain-cert-backend.onrender.com/ai/:splat             200
+/feedback/*      https://blockchain-cert-backend.onrender.com/feedback/:splat      200
+/admin/*         https://blockchain-cert-backend.onrender.com/admin/:splat         200
+/employer/*      https://blockchain-cert-backend.onrender.com/employer/:splat      200
+/registrar/*     https://blockchain-cert-backend.onrender.com/registrar/:splat     200
+/student/*       https://blockchain-cert-backend.onrender.com/student/:splat       200
+/health          https://blockchain-cert-backend.onrender.com/health               200
+/uploads/*       https://blockchain-cert-backend.onrender.com/uploads/:splat       200
+
+# SPA Routing Fallback
+/* /index.html 200
