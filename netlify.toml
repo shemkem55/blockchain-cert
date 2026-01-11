@@ -4,7 +4,10 @@
   command = "npm run build"
 
 [build.environment]
+  # Disable secrets scanning for build artifacts and common ENV variables
   SECRETS_SCAN_ENABLED = "false"
+  # Alternative: Use SECRETS_SCAN_OMIT_PATHS = "dist/**,public/**,.netlify/**"
+  # Alternative: Use SECRETS_SCAN_OMIT_KEYS = "NODE_ENV,PORT,ADMIN_USERNAME"
 
 [[redirects]]
   from = "/auth/*"
