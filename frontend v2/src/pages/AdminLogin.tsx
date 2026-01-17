@@ -15,8 +15,12 @@ const AdminLogin = () => {
         e.preventDefault();
         setLoading(true);
 
+        const API_URL = import.meta.env.PROD
+            ? 'https://blockchain-cert-backend.onrender.com/auth/admin-login'
+            : '/auth/admin-login';
+
         try {
-            const res = await fetch('/auth/admin-login', {
+            const res = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include',

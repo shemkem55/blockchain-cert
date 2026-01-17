@@ -18,7 +18,10 @@ export default function Login() {
   useEffect(() => {
     const checkUser = async () => {
       try {
-        const res = await fetch('/auth/me', { credentials: 'include' });
+        const API_URL = import.meta.env.PROD
+          ? 'https://blockchain-cert-backend.onrender.com/auth/me'
+          : '/auth/me';
+        const res = await fetch(API_URL, { credentials: 'include' });
         if (res.ok) {
           const data = await res.json();
           if (data.user?.isVerified) {
@@ -47,8 +50,13 @@ export default function Login() {
     if (!email || !password) return toast.error('Please enter email and password');
 
     setLoading(true);
+
+    const API_URL = import.meta.env.PROD
+      ? 'https://blockchain-cert-backend.onrender.com/auth/login'
+      : '/auth/login';
+
     try {
-      const res = await fetch('/auth/login', {
+      const res = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ email, password, role }),
