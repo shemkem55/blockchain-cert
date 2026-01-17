@@ -4,6 +4,8 @@ import { Shield, Lock, Eye, EyeOff, AlertTriangle, ArrowLeft, ArrowRight, User, 
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { safeFetch } from '../utils/apiClient';
+
 const AdminLogin = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
@@ -15,34 +17,11 @@ const AdminLogin = () => {
         e.preventDefault();
         setLoading(true);
 
-        const API_URL = import.meta.env.PROD
-            ? 'https://blockchain-cert-backend.onrender.com/auth/admin-login'
-            : '/auth/admin-login';
-
         try {
-            const res = await fetch(API_URL, {
+            const data = await safeFetch('/auth/admin-login', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                credentials: 'include',
                 body: JSON.stringify({ username, password })
             });
-
-            const contentType = res.headers.get('content-type');
-            let data;
-            if (contentType && contentType.includes('application/json')) {
-                data = await res.json();
-            } else {
-                const text = await res.text();
-                throw new Error(`Server returned non-JSON response. This usually means the backend URL is wrong or the service is down. Response start: ${text.substring(0, 500)}`);
-            }
-
-            if (!res.ok) {
-                if (data.errors && Array.isArray(data.errors)) {
-                    const errMsg = data.errors.map((err: { msg: string }) => err.msg).join(', ');
-                    throw new Error(errMsg);
-                }
-                throw new Error(data.error || 'Authentication failed');
-            }
 
             sessionStorage.setItem('admin_authenticated', 'true');
             sessionStorage.setItem('admin_login_time', new Date().toISOString());
@@ -55,10 +34,11 @@ const AdminLogin = () => {
             setTimeout(() => {
                 navigate('/admin-portal');
             }, 500);
-        } catch (err: unknown) {
-            toast.error(err instanceof Error ? err.message : 'Authentication failed', {
-                description: 'Access denied. Please contact system administrator.',
-                duration: 4000
+        } catch (err: any) {
+            console.error("Login Error:", err);
+            toast.error('Authentication Failed', {
+                description: err.message || 'Access denied.',
+                duration: 5000
             });
         } finally {
             setLoading(false);

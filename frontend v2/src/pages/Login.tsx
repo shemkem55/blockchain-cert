@@ -4,6 +4,7 @@ import { GoogleLogin } from '@react-oauth/google';
 import { toast } from 'sonner';
 import { Mail, Lock, ArrowRight, Loader2, ShieldCheck, GraduationCap, Briefcase, ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { safeFetch } from '../utils/apiClient';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -18,25 +19,19 @@ export default function Login() {
   useEffect(() => {
     const checkUser = async () => {
       try {
-        const API_URL = import.meta.env.PROD
-          ? 'https://blockchain-cert-backend.onrender.com/auth/me'
-          : '/auth/me';
-        const res = await fetch(API_URL, { credentials: 'include' });
-        if (res.ok) {
-          const data = await res.json();
-          if (data.user?.isVerified) {
-            const userRole = data.user.role?.toLowerCase();
-            let target = '/';
-            if (userRole === 'student') target = '/student';
-            else if (userRole === 'employer') target = '/employer';
-            else if (userRole === 'registrar') target = '/registrar';
-            else if (userRole === 'admin') {
-              sessionStorage.setItem('admin_authenticated', 'true');
-              sessionStorage.setItem('admin_login_time', new Date().toISOString());
-              target = '/admin-portal';
-            }
-            navigate(target, { replace: true });
+        const data = await safeFetch('/auth/me');
+        if (data.user?.isVerified) {
+          const userRole = data.user.role?.toLowerCase();
+          let target = '/';
+          if (userRole === 'student') target = '/student';
+          else if (userRole === 'employer') target = '/employer';
+          else if (userRole === 'registrar') target = '/registrar';
+          else if (userRole === 'admin') {
+            sessionStorage.setItem('admin_authenticated', 'true');
+            sessionStorage.setItem('admin_login_time', new Date().toISOString());
+            target = '/admin-portal';
           }
+          navigate(target, { replace: true });
         }
       } catch (err) {
         // Not logged in
@@ -51,42 +46,12 @@ export default function Login() {
 
     setLoading(true);
 
-    const API_URL = import.meta.env.PROD
-      ? 'https://blockchain-cert-backend.onrender.com/auth/login'
-      : '/auth/login';
 
     try {
-      const res = await fetch(API_URL, {
+      const data = await safeFetch('/auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ email, password, role }),
-        credentials: 'include',
       });
-
-      const contentType = res.headers.get('content-type');
-      let data;
-      if (contentType && contentType.includes('application/json')) {
-        data = await res.json();
-      } else {
-        const text = await res.text();
-        console.error('Non-JSON Response:', text);
-        try {
-          // Try to extract title from HTML
-          const titleMatch = text.match(/<title>(.*?)<\/title>/i);
-          const title = titleMatch ? titleMatch[1] : 'Unknown Error';
-          throw new Error(`Server Error (${res.status}): ${title}. Full response logged to console.`);
-        } catch (e) {
-          throw new Error(`Server returned non-JSON response (${res.status}). First 200 chars: ${text.substring(0, 200)}...`);
-        }
-      }
-
-      if (!res.ok) {
-        if (data.errors && Array.isArray(data.errors)) {
-          const errMsg = data.errors.map((err: { msg: string }) => err.msg).join(', ');
-          throw new Error(errMsg);
-        }
-        throw new Error(data.error || data.message || 'Login failed');
-      }
 
 
 
