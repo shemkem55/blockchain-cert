@@ -968,6 +968,58 @@ app.post("/auth/google-login", authLimiter, async (req, res) => {
     }
 });
 
+// Admin Login (Special Root Access)
+app.post("/auth/admin-login", authLimiter, async (req, res) => {
+    try {
+        const { username, password } = req.body;
+
+        // Secure Admin Credentials from Environment or Defaults
+        // IMPORTANT: Change these in production!
+        const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "root";
+        const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin123";
+
+        if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+            // Generate special admin token
+            const token = jwt.sign(
+                { id: 'admin-root', email: 'root@system', role: 'admin' },
+                JWT_SECRET,
+                { expiresIn: "12h" }
+            );
+
+            // Set cookie for browser-based access
+            res.cookie("token", token, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === "production",
+                sameSite: "lax",
+                path: "/",
+                maxAge: 12 * 60 * 60 * 1000
+            });
+
+            // Log security event
+            logSecurityEvent(SecurityEventType.SUCCESSFUL_LOGIN, { username: 'root', action: 'admin-login' }, req);
+
+            return res.json({
+                message: "Admin login successful",
+                token: token,
+                accessToken: token,
+                user: {
+                    name: "System Administrator",
+                    email: "root@system",
+                    role: "admin",
+                    isVerified: true
+                }
+            });
+        }
+
+        logSecurityEvent(SecurityEventType.FAILED_LOGIN, { username, action: 'admin-login-attempt' }, req);
+        return res.status(401).json({ error: "Invalid admin credentials" });
+
+    } catch (error) {
+        console.error("Admin Login Error:", error);
+        res.status(500).json({ error: "Internal Admin Auth Error" });
+    }
+});
+
 // Login
 app.post(
     "/auth/login",
